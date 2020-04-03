@@ -13,17 +13,26 @@ body {
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: auto auto auto auto auto; }
 
-section {
-  grid-column: 2 / 5;
-  margin: 5%; }
-  section h2 {
-    text-align: center; }
-
 footer {
   grid-row: -1;
   grid-column: 1;
   margin: 5%;
   line-height: 25%; }
+
+.body {
+  grid-column: 2 / 5;
+  margin: 5%; }
+
+#widgets {
+  text-align: center; }
+
+#gallery {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto auto auto auto; }
+
+img {
+  width: 100%; }
 
 @media only screen and (max-width: 480px) {
   nav {
