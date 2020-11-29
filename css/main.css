@@ -13,7 +13,7 @@ header {
   font-family: 'Libre Baskerville', serif;
   font-size: 16pt;
   text-align: left;
-  margin: 5%;
+  margin-top: 5%;
   grid-column: 2 / 6; }
 
 h3 {
@@ -36,28 +36,35 @@ footer {
   grid-column: 1; }
   .profile-pic img {
     border-radius: 10%;
-    width: 100%;
-    margin-top: 15%; }
+    scale: 85%;
+    margin-right: 15%; }
 
 .content {
   grid-column: 2 / 5;
   font-family: 'Libre Baskerville', serif;
   line-height: 150%;
-  text-indent: 4% hanging; }
+  text-indent: 1.5em; }
 
 #gallery {
+  grid-row: auto;
+  grid-column: 2 / 6;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: subgrid;
   grid-template-rows: auto auto auto auto auto; }
+  #gallery img {
+    scale: 95%;
+    margin-left: 5%;
+    display: table-cell;
+    vertical-align: middle; }
 
 img {
   width: 100%; }
 
 a {
-  color: #534646; }
+  color: #4b3535; }
 
-a::after {
-  color: #332e2e; }
+a:visited {
+  color: #888383; }
 
 @media only screen and (max-width: 480px) {
   nav {
