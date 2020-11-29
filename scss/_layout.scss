@@ -1,17 +1,30 @@
+html {
+  background-color: #fffbf0fb;
+}
+
 nav {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13pt;
   grid-column: 1;
+  grid-row: 2;
   ul {
     li {
       list-style: none;
       a {}}}}
 
 header {
-  text-align: center;
-  grid-column: 3;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16pt;
+  text-align: left;
+  margin: 5%;
+  grid-column: 2 / 6;
+}
+
+h3 {
+  text-indent: 4%;
 }
 
 body {
-  font-family: sans-serif;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: auto auto auto auto auto;
@@ -19,20 +32,29 @@ body {
 
 
 footer {
-  grid-row: -1;
-  grid-column: 1;
-  margin: 5%;
-  line-height: 25%;
-}
-
-
-.body {
-  grid-column: 2 / 5;
-  margin: 5%;
-}
-
-#widgets {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13pt;
   text-align: center;
+  grid-row: -1;
+  grid-column: 1 / 6;
+}
+
+.profile-pic {
+  grid-row: 1;
+  grid-column: 1;
+  img {
+    border-radius: 10%;
+    width: 100%;
+    margin-top: 15%;
+  }
+}
+
+.content {
+  grid-column: 2 / 5;
+  // grid-row:
+  font-family: 'Libre Baskerville', serif;;
+  line-height: 150%;
+  text-indent: 4% hanging;
 }
 
 #gallery {
@@ -43,6 +65,14 @@ footer {
 
 img {
   width: 100%;
+}
+
+a {
+  color: rgb(83, 70, 70);
+}
+
+a::after {
+  color: rgb(51, 46, 46);
 }
 
 
