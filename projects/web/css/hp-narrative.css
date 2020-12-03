@@ -1,0 +1,69 @@
+nav {
+  background-color: #1a2d32;
+  padding-right: 30px;
+  text-align: center;
+  float:right;
+  margin-right: 5%;
+}
+ul{
+  font-size: 20px;
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  color: #E1E9D0;
+  margin-left:10%;
+  font-size:30px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+body{
+  background-color: #2A4850;
+  background-repeat:repeat;
+  background-size:50%;
+}
+
+main{
+  max-width: 90%;
+  margin:50px;
+  text-align: left;
+  text-indent: 5%;
+}
+
+p {
+  color: #88B19B;
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 80px;
+}
+
+aside {
+  grid-column:4;
+}
+
+a {
+  color: #F27A5E;
+  text-decoration: none;
+}
+
+a:visited{
+  color:#F2AA80;
+}
+
+a:hover {
+  color:#a5290d;
+}
+
+::selection {
+  background:   #657939;
+}
+
+footer {
+  position: static;
+  bottom:0;
+  color: #88B19B;
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 50px;
+}

@@ -1,0 +1,37 @@
+// author styles
+body {
+  background: $basecolor;
+  font-family: $basefont;
+}
+
+header {
+  @include box;
+  h1 {
+    font-family: $headfont;
+  }
+}
+
+nav {
+  @include box;
+  text-align: center;
+  ul {
+    margin-left: -30px;
+    li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 20px;
+      a {
+        text-decoration: none;
+        padding: 10px;
+      }//a
+      a:link, a:visited {
+        color: black;
+      }//link, visited
+      a:hover, a:active {
+        @include rounded_corner;
+        background: black;
+        color: white;
+      }//hover, active
+    }//li
+  }//ul
+}//nav

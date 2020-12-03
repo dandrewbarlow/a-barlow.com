@@ -1,0 +1,13 @@
+
+@mixin box {
+  background: grey;
+  border: 1px solid black;
+  padding: $space;
+  margin-bottom: $space;
+}
+
+@mixin animatron {
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
