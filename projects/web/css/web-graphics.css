@@ -1,0 +1,29 @@
+/*Background*/
+body {
+  background: url("../img/background.jpg") center center fixed no-repeat;
+  background-size: cover;
+}
+
+header {
+  background: url("../img/title.png") no-repeat center;
+  width: 400px;
+  height: 100px;
+  padding-left: 69%;
+}
+
+h1 {
+	position: absolute;
+	top: -999em;
+	left: -999em;
+}
+
+.container {
+  width: auto;
+  margin = 0 auto;
+  text-align: center;
+}
+
+#foreground {
+  height: 490px;
+  width: 300px;
+}
