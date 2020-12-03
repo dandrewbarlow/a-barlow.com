@@ -1,6 +1,7 @@
 html {
   background-color: #fffbf0fb;
-  overflow: hidden;
+  // overflow: hidden;
+  word-wrap: break-word;
 }
 
 nav {
@@ -134,11 +135,29 @@ a:visited {
 
 .content {
   grid-column: 1;
-  grid-row: 4;
+  grid-row: auto;
   font-family: 'Libre Baskerville', serif;;
   line-height: 150%;
   text-indent: 1.5em;
+  width: 90%;
+  padding: 5%;
 }
+
+#about {
+  grid-column: 1;
+  grid-row: auto;
+  font-family: 'Libre Baskerville', serif;;
+  line-height: 150%;
+  text-indent: 1.5em;
+  width: 90%;
+  padding: 5%;
+  word-wrap: break-word;
+
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+}
+
 #gallery {
   grid-row: 4;
   grid-column: 1;

@@ -1,3 +1,5 @@
 node_modules/
 img/
 utils/
+./projects/dev/projects/*/node_modules/
+./projects/dev/projects/*/.git/
