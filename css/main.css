@@ -3,6 +3,7 @@ html {
   word-wrap: break-word; }
 
 nav {
+  text-indent: 1.5em;
   font-family: 'Open Sans', sans-serif;
   font-size: 13pt;
   grid-column: 1;
@@ -18,7 +19,8 @@ header {
   font-size: 16pt;
   text-align: left;
   margin-top: 5%;
-  grid-column: 2 / 6; }
+  grid-column: 2 / 6;
+  border-bottom: #4b3535 dotted; }
 
 h3 {
   text-indent: 4%; }
@@ -86,7 +88,8 @@ a:visited {
     grid-column: 1;
     text-align: center;
     margin-left: -15%;
-    line-height: 150%; }
+    line-height: 150%;
+    text-indent: 0em; }
   header {
     text-indent: 0em;
     grid-column: 1;
