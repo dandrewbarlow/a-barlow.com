@@ -17,6 +17,7 @@ nav {
       a {}}}}
 
 header {
+  text-indent: 1.5em;
   font-family: 'Libre Baskerville', serif;
   font-size: 16pt;
   text-align: left;
@@ -76,6 +77,18 @@ footer {
     vertical-align: middle;
   }
 }
+#about {
+  grid-column: 2 / 6;
+  grid-row: auto;
+  font-family: 'Libre Baskerville', serif;;
+  line-height: 150%;
+  text-indent: 1.5em;
+  width: 90%;
+  padding: 5%;
+  word-wrap: break-word;
+
+ 
+}
 
 img {
   width: 100%;
@@ -101,6 +114,7 @@ a:visited {
   }
 
   header {
+    text-indent: 0em;
     grid-column: 1;
     grid-row: 2;
     text-align: center;
