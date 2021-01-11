@@ -3,3 +3,4 @@ img/
 utils/
 ./projects/dev/projects/*/node_modules/
 ./projects/dev/projects/*/.git/
+*.DS_Store
