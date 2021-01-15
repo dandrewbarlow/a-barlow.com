@@ -7,8 +7,7 @@ nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 13pt;
   grid-column: 1;
-  grid-row: 2;
-  margin-left: -15%; }
+  grid-row: 2; }
   nav ul li {
     overflow: hidden;
     list-style: none; }
@@ -68,7 +67,8 @@ footer {
   grid-row: auto;
   font-family: 'Libre Baskerville', serif;
   line-height: 150%;
-  text-indent: 1.5em;
+  text-indent: 1.666em;
+  line-height: 1.666em;
   width: 90%;
   padding: 5%;
   word-wrap: break-word; }
