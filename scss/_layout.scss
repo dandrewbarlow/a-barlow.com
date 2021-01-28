@@ -62,6 +62,25 @@ footer {
   font-family: 'Libre Baskerville', serif;;
   line-height: 150%;
   text-indent: 1.5em;
+  
+  .description {
+    text-align: center;
+  }
+  .vertical {
+    width: 50%;
+    left: 25%;
+  }
+  h3 {
+    position: relative;
+    // left: 50%;
+  }
+  img {
+    
+    // width: 80%;
+    // left: 20%;
+    height: auto;
+    position: relative;
+  }
 }
 
 #gallery {
