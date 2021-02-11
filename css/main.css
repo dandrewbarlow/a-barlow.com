@@ -83,6 +83,9 @@ footer {
   padding: 5%;
   word-wrap: break-word; }
 
+#perlin {
+  max-width: 100%; }
+
 img {
   width: 100%; }
 
@@ -155,6 +158,11 @@ a:visited {
       margin-left: 0;
       padding-bottom: 5%;
       display: table-cell;
-      vertical-align: middle; } }
+      vertical-align: middle; }
+  #perlin {
+    width: 75%;
+    max-width: 100%; }
+  iframe {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
