@@ -49,14 +49,7 @@
     <h1>Andrew Barlow</h1>
   </header>
 
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about-me.html">About Me</a></li>
-			<li><a href="art.html">Art</a></li>
-			<li><a href="projects.html">My Projects</a></li>
-		</ul>
-	</nav>
+	<nav id="nav"></nav>
 
   <section class="content">
     <p>Welcome to my web portfolio. Feel free to look around at my work and learn a little bit more about me.</p>
@@ -77,6 +70,8 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <!-- cus rewriting nav content for each page is for suckers -->
+  <script src="js/nav.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -84,5 +79,8 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+  
 </body>
 </html>
