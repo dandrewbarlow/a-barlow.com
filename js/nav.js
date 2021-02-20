@@ -1,3 +1,4 @@
+// html content for navigation bar
 navContent = `
         <ul>
 			<li><a href="index.html">Home</a></li>
@@ -7,5 +8,5 @@ navContent = `
         </ul>
         `;
 
-nav = document.getElementById('nav');
-nav.innerHTML = navContent;
+nav = $('nav:first');
+nav.html(navContent);

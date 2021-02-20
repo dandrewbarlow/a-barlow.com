@@ -11,12 +11,12 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
-  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -24,16 +24,19 @@
 
   <meta name="theme-color" content="#fafafa">
 
-    <!-- GOOGLE ANALYTICS -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HX1QHRESX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-  
-      gtag('config', 'G-2HX1QHRESX');
-    </script>
-    </head>
+  <!-- GOOGLE ANALYTICS -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HX1QHRESX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2HX1QHRESX');
+  </script>
+</head>
 </head>
 
 <body>
@@ -50,14 +53,15 @@
     <h1>Andrew Barlow</h1>
   </header>
 
-	<nav id="nav"></nav>
+  <nav id="nav"></nav>
 
   <section class="content">
     <h2>Projects</h2>
-    
+
     <h3>Interactive Fractal Viewer</h3>
-    <a href="https://creative.colorado.edu/~daba3662/dev/projects/final/index.html"><img src="img/projects/fractal-viewer.png" alt="Screenshot of interactive fractal viewer"></a>
-   
+    <a href="https://creative.colorado.edu/~daba3662/dev/projects/final/index.html"><img
+        src="img/projects/fractal-viewer.png" alt="Screenshot of interactive fractal viewer"></a>
+
     <p class="description"> A website made with p5.js to generate an interactive fractal tree. </p>
 
     <h3>Conway's Game of Life</h3>
@@ -65,14 +69,16 @@
     <img src="img/projects/conway-glitch.gif" alt="A cool glitch in the Game of Life">
 
     <p class="description">
-      An implementation of the classic cellular automata, Conway's Game of Life, along with a glitch that is cool enough to get it's own gif. Written in Processing using an object-oriented implementation.
+      An implementation of the classic cellular automata, Conway's Game of Life, along with a glitch that is cool enough
+      to get it's own gif. Written in Processing using an object-oriented implementation.
     </p>
 
     <h3>Perlin Noise Art</h3>
     <div id="perlin" style="text-align: center;"></div>
 
     <p class="description">
-     	Randomly generated art, using the classic Perlin Noise algorithm in p5.js! It's relatively simple, but I think it's too cool not to show off.
+      Randomly generated art, using the classic Perlin Noise algorithm in p5.js! It's relatively simple, but I think
+      it's too cool not to show off.
     </p>
 
     <h3>Glitch Art</h3>
@@ -80,32 +86,46 @@
     <img class="vertical" src="img/projects/Glitch Art/sky.jpg" alt="Glitched out sky">
     <img class="vertical" src="img/projects/Glitch Art/me.jpg" alt="Glitched out me">
 
-    <p class="description">Some of my favorite pieces of glitch art, taken by & of me and glitched using a channel shifting algorithm in Processing.</p>
+    <p class="description">Some of my favorite pieces of glitch art, taken by & of me and glitched using a channel
+      shifting algorithm in Processing.</p>
 
     <h3>Tide Pod Synthesizer</h3>
     <div style="text-align: center;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/NTRjg8_3qvY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NTRjg8_3qvY" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
     <p class="description">
-      A synthesizer built into a tide pod case, powered by an arduino 
-      (<a href="https://gist.github.com/dandrewbarlow/e975347fcc21dfde6768aa71401fbd2b">link to code</a>). 
-      Not many materials available (made at the beginning of the pandemic), but I am very proud of the functionality that I managed to get out of it.
+      A synthesizer built into a tide pod case, powered by an arduino
+      (<a href="https://gist.github.com/dandrewbarlow/e975347fcc21dfde6768aa71401fbd2b">link to code</a>).
+      Not many materials available (made at the beginning of the pandemic), but I am very proud of the functionality
+      that I managed to get out of it.
     </p>
 
     <h3>Outside Links</h3>
     <ul>
-        <li><a href="https://andrewbarlow656277299.wordpress.com">Documentation Blog</a>- provides documentation for a lot of assignments in many classes</li>
-        <li><a href="https://github.com/dandrewbarlow">Github</a>- this link is at the bottom of this site, but just to be safe, I thought I'd say that there's a lot of stuff that I keep on Github.</li>
-        <ul>
-          <li><a href="https://github.com/dandrewbarlow/Automated-Herb-Garden">Automated Herb Garden</a>- creating an arduino managed herb garden. Ended up getting over-watered, would like to revisit with a working moisture sensor.</li>
-          <li><a href="https://github.com/dandrewbarlow/zip-crack">Zip-Crack</a>- a brute-force encryption breaker for .zip files written in go</li>
-          <li><a href="https://github.com/dandrewbarlow/readpdf">readpdf</a>- a script to generate text-to-speech narration of pdf files (and epub & anything else pandoc can convert)</li>
-          <li><a href="https://github.com/dandrewbarlow/news-scraper">News Scraper</a>- a news scraper written in python to learn about web scraping</li>
-          <li><a href="https://github.com/dandrewbarlow/isobel">isobel</a>- a tarot card reading program written in C++ for the command line</li>
-        </ul>
-        <li><a href="projects/web/index.html">Web</a>- My first web development class splash page</li>
-        <li><a href="https://creative.colorado.edu/~daba3662/dev/">Creative Web Development</a>- My second web development class' splash screen.</li>
-        <li><a href="https://soundcloud.com/andrew-barlow-226181391/sets/tam-sound">Sound Playlist</a>- a SoundCloud playlist of my projects for my sound class.</li>
+      <li><a href="https://andrewbarlow656277299.wordpress.com">Documentation Blog</a>- provides documentation for a lot
+        of assignments in many classes</li>
+      <li><a href="https://github.com/dandrewbarlow">Github</a>- this link is at the bottom of this site, but just to be
+        safe, I thought I'd say that there's a lot of stuff that I keep on Github.</li>
+      <ul>
+        <li><a href="https://github.com/dandrewbarlow/Automated-Herb-Garden">Automated Herb Garden</a>- creating an
+          arduino managed herb garden. Ended up getting over-watered, would like to revisit with a working moisture
+          sensor.</li>
+        <li><a href="https://github.com/dandrewbarlow/zip-crack">Zip-Crack</a>- a brute-force encryption breaker for
+          .zip files written in go</li>
+        <li><a href="https://github.com/dandrewbarlow/readpdf">readpdf</a>- a script to generate text-to-speech
+          narration of pdf files (and epub & anything else pandoc can convert)</li>
+        <li><a href="https://github.com/dandrewbarlow/news-scraper">News Scraper</a>- a news scraper written in python
+          to learn about web scraping</li>
+        <li><a href="https://github.com/dandrewbarlow/isobel">isobel</a>- a tarot card reading program written in C++
+          for the command line</li>
+      </ul>
+      <li><a href="projects/web/index.html">Web</a>- My first web development class splash page</li>
+      <li><a href="https://creative.colorado.edu/~daba3662/dev/">Creative Web Development</a>- My second web development
+        class' splash screen.</li>
+      <li><a href="https://soundcloud.com/andrew-barlow-226181391/sets/tam-sound">Sound Playlist</a>- a SoundCloud
+        playlist of my projects for my sound class.</li>
     </ul>
   </section>
 
@@ -113,19 +133,22 @@
   <footer>
     <p>Made by Andrew Barlow
       <br>
-    <a href="https://github.com/dandrewbarlow">Github</a>
+      <a href="https://github.com/dandrewbarlow">Github</a>
       <br>
-    <a href="mailto:dandrewbarlow@gmail.com">E-Mail</a></p>
+      <a href="mailto:dandrewbarlow@gmail.com">E-Mail</a></p>
   </footer>
 
   <!-- Begin Script stuff -->
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> -->
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/p5.min.js"></script>
   <script src="js/perlin-noise.js"></script>
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
   <!-- cus rewriting nav content for each page is for suckers -->
   <script src="js/nav.js"></script>
 
@@ -136,6 +159,7 @@
   </script> -->
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
-  
+
 </body>
+
 </html>
