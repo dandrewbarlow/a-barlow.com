@@ -4,7 +4,7 @@ var perlin = function(p) {
     p.inc = 0.01;
     p.zoff = 1000;
     p.setup = function() {
-        p.canvas = p.createCanvas(500, 500);
+        p.canvas = p.createCanvas(400, 400);
         p.canvas.parent("#perlin")
         p.noiseDetail(3);
     }
