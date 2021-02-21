@@ -1,17 +1,40 @@
 // namespacing to put multiple sketches on one page
-var schotter = function(p) {
+var schotter= function(p) {
   p.squareSize = 50;
   p.canvas;
+  // can switch to a color version with this var
+  p.colorSquares = false;
 
+  // using type instead to give me more leeway in setting it up
   p.setup = function () {
-    p.canvas = p.createCanvas(p.squareSize * 12, p.squareSize * 12);
-    p.canvas.parent("#schotter");
-    p.noFill();
   }
 
-  p.draw = function () {
+  p.type = function(color) {
+    p.canvas = p.createCanvas(p.squareSize * 12, p.squareSize * 12);
+
+    if (color) {
+      p.colorSquares = true;
+      p.canvas.parent("#schotterColor");
+    }
+    else{
+      p.canvas.parent("#schotter");
+    }
+
+      p.draw();
+  }
+
+  p.draw = function() {
     p.background(255);
-    // more for clarity of code than a functional definition
+
+    if (p.colorSquares) {
+      p.noStroke();
+    }
+    else {
+      p.noFill();
+      p.stroke(0);
+    }
+
+
 
     for (p.x = 0; p.x < 10; p.x++) {
       for (p.y = 0; p.y < 10; p.y++) {
@@ -42,6 +65,9 @@ var schotter = function(p) {
 
         p.rotate(p.degrees);
 
+        if (p.colorSquares) {
+          p.fill( p.color( p.random(255), p.random(255), p.random(255), 50) );
+        }
         p.square(0, 0, p.squareSize);
 
         p.pop();
@@ -59,3 +85,8 @@ var schotter = function(p) {
 }
 
 var newSchotter = new p5(schotter);
+newSchotter.type(false);
+
+var colorSchotter = new p5(schotter);
+colorSchotter.type(true);
+// colorSchotter.setParent("#schotterColor");
