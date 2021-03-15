@@ -64,7 +64,7 @@ footer {
   grid-row: auto;
   grid-column: 2 / 6;
   display: grid;
-  grid-template-columns: subgrid;
+  grid-template-columns: 24% 24% 24% 24%;
   grid-template-rows: auto auto auto auto auto; }
   #gallery img {
     scale: 95%;
