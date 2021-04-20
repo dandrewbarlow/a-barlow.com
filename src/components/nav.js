@@ -14,13 +14,13 @@ export default function Nav() {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="about">About</Link>
+                    <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <Link to="art">Art</Link>
+                    <Link to="/art">Art</Link>
                 </li>
                 <li>
-                    <Link to="projects">Projects</Link>
+                    <Link to="/projects">Projects</Link>
                 </li>
             </ul>
         </nav>
