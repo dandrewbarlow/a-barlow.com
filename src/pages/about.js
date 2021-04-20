@@ -28,11 +28,11 @@ export default function About() {
             <ul>
                 <li>Python
                     <ul>
-                        <li>Data Science libraries like Pandas, numpy, "&amp;" matplotlib</li>
+                        <li>Data Science libraries like Pandas, numpy, &amp; matplotlib</li>
                         <li>Web Scraping with BeautifulSoup</li>
                         <li>Jupyter notebooks for data visualization</li>
                         <li>Automating Workflows</li>
-                        <li>Trying out deep learning libraries like Tensorflow "&amp;" Pytorch (to be clear, this one's a curiosity, but I'm no expert)</li>
+                        <li>Trying out deep learning libraries like Tensorflow &amp; Pytorch (to be clear, this one's a curiosity, but I'm no expert)</li>
                     </ul>
                 </li>
                 <li>Web Technologies
@@ -41,7 +41,7 @@ export default function About() {
                         <li>CSS</li>
                         <li>Javascript</li>
                         <li>Node.js</li>
-                        <li>Hosting "&amp;" Administrating</li>
+                        <li>Hosting &amp; Administrating</li>
                         <li><i>Some</i> work with Databases</li>
                     </ul>
                 </li>
@@ -52,16 +52,16 @@ export default function About() {
                         <li>I'm not a Haskell expert, but of all the items on this list, Haskell was one of the most rewarding things to learn, just because of the completely different way of thinking about and approaching problems.</li>
                     </ul>
                 </li>
-                <li>LATEX Document Creation "&amp;" Formatting</li>
-                <li>General UNIX "&amp;" Shell Skills
+                <li>LATEX Document Creation &amp; Formatting</li>
+                <li>General UNIX &amp; Shell Skills
                     <ul>
                         <li>Competent Terminal User</li>
-                        <li>Compiling "&amp;" Debugging Programs</li>
-                        <li>Scripting "&amp;" Automation</li>
+                        <li>Compiling &amp; Debugging Programs</li>
+                        <li>Scripting &amp; Automation</li>
                         <li>Version Control using git and github</li>
                     </ul>
                 </li>
-                <li>Electronics "&amp;" Systems Programming
+                <li>Electronics &amp; Systems Programming
                     <ul>
                         <li>Arduino</li>
                         <li>Analog Synthesizers</li>
@@ -83,11 +83,13 @@ export default function About() {
                 </li>
             </ul>
 
-            Since starting the CTD major, I've also learned a lot of digital (and analog) creation and design tools that have helped broaden my skills. Since the CTD major is relatively new and often merits a little explanation (the class names are also somewhat vague, but self-explanatory once you know what they're about), I thought I'd go through some of the classes and what I learned from them.
+            <p>
+                Since starting the CTD major, I've also learned a lot of digital (and analog) creation and design tools that have helped broaden my skills. Since the CTD major is relatively new and often merits a little explanation (the class names are also somewhat vague, but self-explanatory once you know what they're about), I thought I'd go through some of the classes and what I learned from them.
+            </p>
 
             <h3>Image</h3>
 
-            <p>This class started by teaching us photography and how to use the common tools of the trade, like Photoshop "&amp;" Lightroom, before moving onto more advanced techniques, and then shooting video and editing in After Effects.</p>
+            <p>This class started by teaching us photography and how to use the common tools of the trade, like Photoshop &amp; Lightroom, before moving onto more advanced techniques, and then shooting video and editing in After Effects.</p>
 
             <h3>Form</h3>
 
@@ -116,7 +118,7 @@ export default function About() {
 
             <h3>Color</h3>
 
-            <p>This was a class entirely devoted to color! It was surprisingly comprehensive too, I would say. It started with the physics of color (light "&amp;" energy interacting with matter), then the chemistry of color (roles of different molecules and chemical structures in creating color), then biology (how the eye perceives color), then psychology (how colors affect mood/color theory), then compositional properties of color (how people combine color to varying effects across art and design), and finally color in art (experimenting with many different mediums and styles of art) </p>
+            <p>This was a class entirely devoted to color! It was surprisingly comprehensive too, I would say. It started with the physics of color (light &amp; energy interacting with matter), then the chemistry of color (roles of different molecules and chemical structures in creating color), then biology (how the eye perceives color), then psychology (how colors affect mood/color theory), then compositional properties of color (how people combine color to varying effects across art and design), and finally color in art (experimenting with many different mediums and styles of art) </p>
 
 
 

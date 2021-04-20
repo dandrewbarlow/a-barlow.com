@@ -19,19 +19,19 @@
 // VARIABLES/////////////////////////////////////////////////////////////////////
 
 // color
-$background-color: #64F0E5;
+$background-color: #ffffff;
 $background-highlight: #000000;
 
 $text-color: #000000;
-$text-highlight: #000000;
+$text-highlight: #666666;
 
-$link-color: #000000;
-$link-color-visited: #000000;
+$link-color: #73A4FF;
+$link-color-visited: #7163DF;
 
 // typography
 $display-font: 'Roboto', sans-serif;
 $display-font-weight: 900;
-$display-font-size: 30pt;
+$display-font-size: 20pt;
 
 $copy-font: 'Roboto', sans-serif;
 $copy-font-size: 16pt;
@@ -43,3 +43,72 @@ $small-font-weight: 200;
 
 // STYLE/////////////////////////////////////////////////////////////////////
 
+html {
+    background-color: $background-color;
+}
+header {
+    // Typography
+    font-family: $display-font;
+    font-size: $display-font-size;
+    font-weight: $display-font-weight;
+
+
+    // Positioning
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    
+    // Formatting
+    margin: 1em;
+
+    svg {
+        // margin-top: 0.5em;
+        // margin: 1em;
+        height: 15vh;
+        width: 20vh;
+    }
+
+    h1 {
+        margin-top: 0.5em;
+        // margin-left: 1em;
+        line-height: 1.5em;
+        text-align: center;
+    }
+}
+
+nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        li {
+            list-style: none;
+            margin: 1em;
+        }
+}
+
+body {
+    font-family: $copy-font;
+    font-size: $copy-font-size;
+    font-weight: $copy-font-weight;
+    color:$text-color;
+
+    margin: 1em;
+    line-height: 2em;
+
+    p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    ul {
+        margin-left: 1em;
+        list-style-type: disc;
+    }
+
+    a {
+        color: $link-color;
+    }
+    a:visited {
+        color: $link-color-visited;
+    }
+}

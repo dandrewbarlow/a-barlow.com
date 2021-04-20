@@ -8,7 +8,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 // Personal Logo
-import Logo from '../assets/logo.svg'
+import Logo from '../assets/logo-black.svg'
 
 const Header = ({ siteTitle }) => (
   <header>
