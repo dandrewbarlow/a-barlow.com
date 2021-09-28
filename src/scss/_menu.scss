@@ -1,0 +1,47 @@
+
+#menubar {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    background-color: $background-color;
+
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        #icon {
+            width: 100px;
+            margin: 5px;
+            img {
+                height: 100%;
+                -webkit-filter: invert(1);
+                filter: invert(1);
+            }
+        }
+        a {
+            align-self: center;
+        }
+        h1 {
+            width: 100%;
+            margin: 1em;
+            font-size: 30pt;
+            font-weight: bolder;
+        }
+    }
+
+    nav {
+        align-self: center;
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            a {
+                flex-grow: 1;
+                margin: 1em;
+                font-weight: bold;
+            }
+        }
+    }
+}
