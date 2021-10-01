@@ -1,15 +1,16 @@
-#gallery {
-  grid-row: auto;
-  grid-column: 2 / 6;
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+// #gallery {
+//   grid-row: auto;
+//   grid-column: 2 / 6;
 
-  display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
-  grid-template-rows: auto auto auto auto auto;
+//   display: grid;
+//   grid-template-columns: 24% 24% 24% 24%;
+//   grid-template-rows: auto auto auto auto auto;
 
-  img {
-    scale: 95%;
-    margin-left: 5%;
-    display: table-cell;
-    vertical-align: middle;
-  }
-}
+//   img {
+//     margin-left: 5%;
+//     display: table-cell;
+//     vertical-align: middle;
+//     padding: 2%;
+//   }
+// }
