@@ -7,7 +7,7 @@ import profilePic from '../images/index/profile_pic.jpg'
 export default class HomeGallery extends Component {
     render() {
         return (
-            <div class="linkGallery" id="homeGallery">
+            <div className="linkGallery" id="homeGallery">
                 <Link to="/about">
                     <figure>
                         <img src={profilePic} />

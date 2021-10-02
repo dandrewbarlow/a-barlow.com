@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/layout'
-import ProfilePic from '../images/index/profile_pic.jpg'
 
 function about() {
     return (

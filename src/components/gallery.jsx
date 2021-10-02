@@ -39,7 +39,6 @@ export default class Gallery extends Component {
                 thumbnailPosition: "bottom"
             });
         }
-        console.log(e, this.state.thumbnailPosition);
     }
 
     render() {
