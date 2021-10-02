@@ -1,8 +1,9 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import Menu from "./menu"
+import * as React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import Menu from "./menu";
 import Icon from "../images/icon.png";
+// import Index from "../pages/index";
 
 const Header = ({ siteTitle }) => (
   <div id="menubar">

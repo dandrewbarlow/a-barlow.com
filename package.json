@@ -28,10 +28,12 @@
     "gatsby-plugin-sitemap": "^4.10.0",
     "gatsby-source-filesystem": "^3.14.0",
     "gatsby-transformer-sharp": "^3.14.0",
+    "p5": "^1.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-image-gallery": "^1.2.7",
+    "react-p5-wrapper": "^3.0.2",
     "sass": "^1.42.1"
   }
 }

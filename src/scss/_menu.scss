@@ -14,18 +14,20 @@
         #icon {
             width: 100px;
             margin: 5px;
+            margin-left: 20px;
             img {
                 height: 100%;
-                -webkit-filter: invert(1);
-                filter: invert(1);
+                // -webkit-filter: invert(1);
+                // filter: invert(1);
             }
         }
         a {
             align-self: center;
+            color: #000;
         }
         h1 {
             width: 100%;
-            margin: 1em;
+            padding: 1em;
             font-size: 30pt;
             font-weight: bolder;
         }
@@ -41,6 +43,7 @@
                 flex-grow: 1;
                 margin: 1em;
                 font-weight: bold;
+                color: #000;
             }
         }
     }
