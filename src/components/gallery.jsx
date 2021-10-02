@@ -14,6 +14,9 @@ export default class Gallery extends Component {
         this.state = {
             thumbnailPosition: "left"
         };
+    }
+
+    componentDidMount() {
         this.responsiveThumbnail(this.mediaQuery);
     }
 
