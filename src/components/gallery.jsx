@@ -6,11 +6,17 @@ export default class Gallery extends Component {
     constructor(props) {
         super(props);
 
-        // js media queries are apparently a thing
-        this.mediaQuery = window.matchMedia('(min-width: 800px)');
-        // add event listener
-        this.mediaQuery.addEventListener('change', (e) => this.responsiveThumbnail(e));
-        // initialize
+        // https://www.gatsbyjs.com/docs/debugging-html-builds/
+        this.isBrowser = typeof window !== "undefined";
+
+        if(this.isBrowser) {
+            // js media queries are apparently a thing
+            this.mediaQuery = window.matchMedia('(min-width: 800px)');
+            // add event listener
+            this.mediaQuery.addEventListener('change', (e) => this.responsiveThumbnail(e));
+            // initialize
+        }
+
         this.state = {
             thumbnailPosition: "left"
         };
