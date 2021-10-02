@@ -6,7 +6,7 @@ import ProjectGallery from '../components/projectGallery';
 
 function projects() {
     return (
-        <Layout>
+        <Layout title="Projects">
             <section id="projects">
                 <h2>Projects</h2>
 

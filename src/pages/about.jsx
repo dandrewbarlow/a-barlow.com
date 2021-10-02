@@ -4,7 +4,7 @@ import ProfilePic from '../images/index/profile_pic.jpg'
 
 function about() {
     return (
-    <Layout>
+    <Layout title="About Me">
          <section id="about">
             <h2>About Me</h2>
             <p>Hello! My name is Andrew Barlow and I'm a <a href="https://www.colorado.edu/atlas/">Creative Technology and

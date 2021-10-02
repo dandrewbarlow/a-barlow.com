@@ -1,10 +1,12 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby";
+import { Helmet } from 'react-helmet';
 
 import "../scss/style.scss";
+import icon from '../images/icon.png'
 import Header from "./header";
 
-const Layout = ({children}) => {
+const Layout = (props) => {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
         site {
@@ -17,9 +19,14 @@ const Layout = ({children}) => {
 
     return (
         <>
+            <Helmet>
+                <title>{props.title}</title>
+                <link rel="shortcut icon" href={icon} type="image/x-icon" />
+            </Helmet>
+
             <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 
-            <main>{children}</main>
+            <main>{props.children}</main>
 
         </>
     )

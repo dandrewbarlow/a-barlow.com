@@ -8,7 +8,7 @@ import images from '../components/art-gallery-image-list';
 
 function art() {
     return (
-        <Layout>
+        <Layout title="Art">
             <Gallery images={images.slice().reverse()} />
         </Layout>
     )
