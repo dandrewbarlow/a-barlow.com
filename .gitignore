@@ -1,7 +1,8 @@
-node_modules/
+.DS_Store
 .cache/
 .vscode/
+build/
+src/img/
+node_modules/
 public
-img/
 utils/
-.DS_Store
