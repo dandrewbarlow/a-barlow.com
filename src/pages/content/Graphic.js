@@ -59,7 +59,7 @@ export default function Graphic() {
                         legendary Blue Note graphic designer, <a
                         href='http://www.hardformat.org/designers/reid-miles2/'>Reid
                         Miles</a>. All works made with Photoshop and/or
-                        Illustrator. The curious can find my an accompanying
+                        Illustrator. The curious can find my accompanying
                         paper on his style <a href={paper}>here.</a>
                     </Heading>
                 </Container>
