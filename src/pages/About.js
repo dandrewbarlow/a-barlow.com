@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Columns, Column, Content, Container, Heading, Hero, Card } from 'react-bulma-components'
 
 import portrait from '../img/portrait.jpg'
-// import './profile-image.css'
 
 export default class About extends Component {
   render() {
@@ -10,18 +9,18 @@ export default class About extends Component {
         <>
         <Hero>
             <Hero.Body>
-                <Container style={{marginBottom:'2em'}}>
+                <Container mb={6}>
                     <Heading>
                         About Me
                     </Heading>
                 </Container>
 
-                    <Card 
+                    <Card
+                    mb={6}
                     style={{
                         maxWidth: '500px',
                         textAlign: 'center',
                         margin: 'auto',
-                        marginBottom: '2em',
                     }}
                     >
                     <Card.Image 
@@ -34,29 +33,34 @@ export default class About extends Component {
                     </Card>
 
 
-                <Content size={'medium'}>
-                    Hello! My name is Andrew Barlow. I'm a CU Boulder graduate
-                    with a degree in Creative Technology and Design. I would
-                    describe my skill-set as cross-disciplinary, with a focus on
-                    creative digital design and problem solving using modern
-                    methods and technology.  I've focused a lot of my
-                    professional development on various areas of creative
-                    programming, particularly front end web development, and
-                    especially within the React framework.  As a programmer I'm
-                    fairly language agnostic, and have found it easy to pick up
-                    new technologies to fill particular use cases, or even just
-                    for fun.  In my personal time, a favorite hobby is the
-                    creation of procedural art. I love technology and science
-                    just as much as I love art and design. I think this balance
-                    pushes my work to a level that sets me apart.
-                </Content>
+                <Container mb={6}>
 
-                <Container style={{marginBottom:'2em'}}>
+                    <Content size={'medium'}>
+                        Hello! My name is Andrew Barlow. I'm a CU Boulder graduate
+                        with a degree in Creative Technology and Design. I would
+                        describe my skill-set as cross-disciplinary, with a focus on
+                        creative digital design and problem solving using modern
+                        methods and technology.  I've focused a lot of my
+                        professional development on various areas of creative
+                        programming, particularly front end web development, and
+                        especially within the React framework.  As a programmer I'm
+                        fairly language agnostic, and have found it easy to pick up
+                        new technologies to fill particular use cases, or even just
+                        for fun.  In my personal time, a favorite hobby is the
+                        creation of procedural art. I love technology and science
+                        just as much as I love art and design. I think this balance
+                        pushes my work to a level that sets me apart.
+                    </Content>
+
+                </Container>
+
+                <Container mb={6}>
                     <Heading>
                         Skills
                     </Heading>
                 </Container>
 
+                <Container>
                 <Content size={'medium'}>
                 <Columns>
                     <Columns.Column>
@@ -125,6 +129,8 @@ export default class About extends Component {
                     </Columns.Column>
                 </Columns>
                 </Content>
+
+                </Container>
                 
             </Hero.Body>
         </Hero>

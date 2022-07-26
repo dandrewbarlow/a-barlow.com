@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar } from 'react-bulma-components'
+import { Button, Navbar } from 'react-bulma-components'
 import icon from '../img/icon.png';
 import { Link } from 'react-router-dom';
-import { render } from '@testing-library/react';
-
 
 export default class Nav extends Component {
     constructor(props) {
@@ -26,8 +24,14 @@ export default class Nav extends Component {
                         src={icon} 
                         alt="Logo"/>
                     </Link>
-                    <Link className='navbar-item' to="/">Portfolio</Link>
-                    <Link className='navbar-item' to="/about">About Me</Link>
+
+                    <Link className='navbar-item' to="/">
+                        Portfolio
+                    </Link>
+
+                    <Link className='navbar-item' to="/about">
+                        About Me
+                    </Link>
         </>);
     }
 
@@ -40,7 +44,9 @@ export default class Nav extends Component {
             transparent={true}
             style={{textAlign: 'center', justifyContent: 'space-around'}}
             >
-                    {this.navItems()}
+
+            {this.navItems()}
+
             </Navbar>
         );
     }
