@@ -7,23 +7,26 @@ import profilePic from '../images/index/profile_pic.jpg'
 export default class HomeGallery extends Component {
     render() {
         return (
-            <div className="linkGallery" id="homeGallery">
-                <Link to="/about">
-                    <figure>
+            // <div className="
+            <div className="content linkGallery" id="homeGallery">
+                <Link to="/about" className='card'>
+                    <figure className='image card-image'>
                         <img src={profilePic} />
-                        <figcaption>About Me</figcaption>
+                        <figcaption className='card-header-title'>About Me</figcaption>
                     </figure>
                 </Link>
-                <Link to="/art">
-                    <figure>
+
+                <Link to="/art" className='card'>
+                    <figure className='image card-image'>
                         <img src={waves}/>
-                        <figcaption>Art</figcaption>
+                        <figcaption className='card-header-title'>Art</figcaption>
                     </figure>
                 </Link>
-                <Link to="/projects">
-                    <figure>
+
+                <Link to="/projects" className='card'>
+                    <figure className='image card-image'>
                         <img src={gameOfLife} />
-                        <figcaption>Projects</figcaption>
+                        <figcaption className='card-header-title'>Projects</figcaption>
                     </figure>
                 </Link>
             </div>

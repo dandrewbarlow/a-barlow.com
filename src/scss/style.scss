@@ -3,6 +3,9 @@
 // barlow
 @import url(https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
+@import "../../node_modules/bulma/bulma.sass";
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+
 // css reset
 @import "reset";
 @import "variables";
@@ -15,32 +18,32 @@ body {
     }
 }
 
-a {
-    text-decoration: none;
-    color: $link;
-    // font-weight: 600;
-}
-a:visited {
-    color: $link-visited;
-}
-a:hover {
-    color: $link-hover;
-}
+// a {
+//     text-decoration: none;
+//     color: $link;
+//     // font-weight: 600;
+// }
+// a:visited {
+//     color: $link-visited;
+// }
+// a:hover {
+//     color: $link-hover;
+// }
 
-main {
-    margin: 2em;
-    line-height: 1.5em;
-    font-family: Barlow;
-}
-h2 {
-    font-size: 20pt;
-    font-weight: bold;
-    margin: 1em;
-}
+// main {
+//     margin: 2em;
+//     line-height: 1.5em;
+//     font-family: Barlow;
+// }
+// h2 {
+//     font-size: 20pt;
+//     font-weight: bold;
+//     margin: 1em;
+// }
 
-ul li {
-    list-style: circle
-}
+// ul li {
+//     list-style: circle
+// }
 // individual element styling
 @import 'menu';
 @import 'gallery';

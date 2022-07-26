@@ -6,8 +6,13 @@ import Icon from "../images/icon.png";
 // import Index from "../pages/index";
 
 const Header = ({ siteTitle }) => (
-  <div id="menubar">
-    <header>
+  <div 
+  id="menubar" 
+  className="is-primary navbar"
+  >
+    <header
+    className="navbar-brand"
+    >
         <Link id="icon" to="/">
             <img src={Icon} alt="Icon"/>
         </Link>
@@ -18,8 +23,11 @@ const Header = ({ siteTitle }) => (
             </h1>
         </Link>
     </header>
+
+    <a href="" className="navbar-burger"></a>
             
-        <Menu />
+    <Menu />
+
   </div>
 )
 

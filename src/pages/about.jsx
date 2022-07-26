@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 function about() {
     return (
     <Layout title="About Me">
-         <section id="about">
+         <section id="about" className='content section box'>
             <h2>About Me</h2>
             <p>Hello! My name is Andrew Barlow and I'm a <a href="https://www.colorado.edu/atlas/">Creative Technology and
                     Design</a> student at CU Boulder </p>
@@ -161,11 +161,6 @@ function about() {
                     been listening to <a href="https://www.last.fm/user/dandrewbarlow69">here</a>.</p>
         </section>
 
-        <footer>
-            <p>Made by Andrew Barlow</p>
-            <p><a href="https://github.com/dandrewbarlow">Github</a></p>
-            <p><a href="mailto:dandrewbarlow@gmail.com">E-Mail</a></p>
-        </footer>
     </Layout>
     )
 }

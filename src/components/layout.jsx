@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import "../scss/style.scss";
 import icon from '../images/icon.png'
 import Header from "./header";
+import Footer from './footer';
 
 const Layout = (props) => {
     const data = useStaticQuery(graphql`
@@ -28,6 +29,7 @@ const Layout = (props) => {
 
             <main>{props.children}</main>
 
+            <Footer/>
         </>
     )
 }

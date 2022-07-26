@@ -1,51 +1,7 @@
-
-#menubar {
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-
-    background-color: $background-color;
-
-    header {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        #icon {
-            width: 100px;
-            margin: 5px;
-            margin-left: 20px;
-            align-items: flex-start;
-            img {
-                height: 100px;
-                // -webkit-filter: invert(1);
-                // filter: invert(1);
-            }
-        }
-        a {
-            align-self: center;
-            color: #000;
-        }
-        h1 {
-            width: 100%;
-            padding: 1em;
-            font-size: 30pt;
-            font-weight: bolder;
-        }
-    }
-
-    nav {
-        align-self: center;
-        ul {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-evenly;
-            a {
-                flex-grow: 1;
-                margin: 1em;
-                font-weight: bold;
-                color: #000;
-            }
-        }
+#icon {
+width: 100px;
+margin: 5px;
+    img {
+        height: 100px;
     }
 }
