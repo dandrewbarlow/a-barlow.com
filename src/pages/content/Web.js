@@ -4,6 +4,7 @@ import { Columns } from 'react-bulma-components'
 import ImageCard from '../../components/ImageCard'
 
 import aimerTravel from '../../img/web/aimer-travel.png'
+import aBarlow from '../../img/web/a-barlow.jpg'
 import stileHaus from '../../img/web/stileHause.png'
 import capstone from '../../img/web/emitting.gif'
 
@@ -11,6 +12,13 @@ import capstone from '../../img/web/emitting.gif'
 export default function Web() {
   return (
     <Columns centered={true} vCentered={true}>
+        <ImageCard 
+        image={aBarlow} 
+        content="This webpage!" 
+        footer="React, Bulma CSS Framework, hosting, administration, analytics"
+        link="https://a-barlow.com"
+        />
+
         <ImageCard 
         image={aimerTravel} 
         content="Aimer Travel website" 
