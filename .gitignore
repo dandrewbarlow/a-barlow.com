@@ -3,5 +3,6 @@
 .vscode/
 build/
 src/img/
+src/files/
 node_modules/
 utils/
