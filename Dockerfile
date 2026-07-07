@@ -13,8 +13,8 @@ COPY --chown=node:node package*.json ./
 # switch to non-root user
 USER node
 
-# install dependencies
-RUN npm install
+# install dependencies (reproducible, from lockfile)
+RUN npm ci
 
 # copy code
 COPY --chown=node:node . .
@@ -26,7 +26,7 @@ RUN npm run build
 # Prod settings
 FROM nginx:stable-alpine as production
 
-COPY --from=build /home/node/app/build /usr/share/nginx/html
+COPY --from=build /home/node/app/dist /usr/share/nginx/html
 
 EXPOSE 80
 

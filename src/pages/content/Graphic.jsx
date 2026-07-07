@@ -1,5 +1,4 @@
 import React from 'react'
-import { Columns, Container, Heading, Hero } from 'react-bulma-components'
 
 import ImageCard from '../../components/ImageCard'
 
@@ -20,7 +19,7 @@ import paper from '../../files/Reid Miles.pdf'
 export default function Graphic() {
   return (
     <>
-    <Columns centered={true} vCentered={true} gap={5}>
+    <div className="columns is-multiline is-centered is-vcentered is-variable is-5">
         <ImageCard
         image={aimerAlt}
         content="Aimer Travel Logo, colored version"
@@ -46,36 +45,36 @@ export default function Graphic() {
         footer="Illustrator, Hand Drawing"
         size={3}
         />
-    </Columns>
+    </div>
 
-    <Hero>
-        <Hero.Body>
-                <Container>
-                    <Heading>
+    <section className="hero">
+        <div className="hero-body">
+                <div className="container">
+                    <h1 className="title">
                         Series: Reid Miles
-                    </Heading>
-                    <Heading subtitle size={5}>
+                    </h1>
+                    <h2 className="subtitle is-5">
                         Redesigning album covers in the classic style of
                         legendary Blue Note graphic designer, <a
                         href='http://www.hardformat.org/designers/reid-miles2/'>Reid
                         Miles</a>. All works made with Photoshop and/or
                         Illustrator. The curious can find my accompanying
                         paper on his style <a href={paper}>here.</a>
-                    </Heading>
-                </Container>
-        </Hero.Body>
-    </Hero>
-    <Columns centered={true} vCentered={true}>
+                    </h2>
+                </div>
+        </div>
+    </section>
+    <div className="columns is-multiline is-centered is-vcentered">
         <ImageCard
         image={belaLugosi}
         content="Bela Lugosi's Dead - Bauhaus"
         footer={
-        <p>
+        <div>
             References:
             <ul><li>
                 Hub-Tones - Freddie Hubbard
             </li></ul>
-        </p> 
+        </div> 
         }
         />
 
@@ -83,13 +82,13 @@ export default function Graphic() {
         image={station}
         content="Station to Station - David Bowie"
         footer={
-        <p>
+        <div>
             References:
             <ul>
                 <li>Detroit-New York - Thad Jones</li>
                 <li>Our Man in Paris - Dexter Gordon</li>
             </ul>
-        </p>
+        </div>
         }
         />
 
@@ -97,14 +96,14 @@ export default function Graphic() {
         image={bigScience}
         content="Big Science - Laurie Anderson"
         footer={
-        <p>
+        <div>
             References:
             <ul>
                 <li>A.T.'s Delight - Art Taylor</li>
                 <li>Genius of Modern Music: Volume 1 - Thelonious Monk</li>
                 <li>Blue Train - John Coltrane</li>
             </ul>
-        </p>
+        </div>
         }
         />
 
@@ -112,12 +111,12 @@ export default function Graphic() {
         image={hounds}
         content="Hounds of Love - Kate Bush"
         footer={
-            <p>
+            <div>
                 References:
                 <ul>
                     <li>Cornbread - Lee Morgan</li>
                 </ul>
-            </p>
+            </div>
         }
         />
 
@@ -125,15 +124,15 @@ export default function Graphic() {
         image={zappa}
         content="Apostrophe (') - Frank Zappa"
         footer={
-            <p>
+            <div>
                 References:
                 <ul>
                     <li>It's Time! - Jackie McLean</li>
                 </ul>
-            </p>
+            </div>
         }
         />
-    </Columns>
+    </div>
     </>
   )
 }

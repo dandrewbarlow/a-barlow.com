@@ -1,13 +1,7 @@
 services:
   a-barlow.com:
     build: .
+    container_name: a-barlow.com
     ports:
       - "3040:80"
-    volumes:
-      - .:/home/node/app
-      - ./node_modules:/home/node/app/node_modules
-    environment:
-      NODE_ENV: development
-      stdin_open: true
-      tty: true
-      command: npm start
+    restart: unless-stopped
