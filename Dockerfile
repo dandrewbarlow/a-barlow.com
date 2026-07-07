@@ -13,8 +13,8 @@ COPY --chown=node:node package*.json ./
 # switch to non-root user
 USER node
 
-# install dependencies
-RUN npm install
+# install dependencies (reproducible, from lockfile)
+RUN npm ci
 
 # copy code
 COPY --chown=node:node . .
