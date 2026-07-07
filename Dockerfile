@@ -26,7 +26,7 @@ RUN npm run build
 # Prod settings
 FROM nginx:stable-alpine as production
 
-COPY --from=build /home/node/app/build /usr/share/nginx/html
+COPY --from=build /home/node/app/dist /usr/share/nginx/html
 
 EXPOSE 80
 
