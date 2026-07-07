@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Columns, Column, Content, Container, Heading, Hero, Card } from 'react-bulma-components'
 
 import portrait from '../img/portrait.jpg'
 
@@ -7,35 +6,36 @@ export default class About extends Component {
   render() {
     return (
         <>
-        <Hero>
-            <Hero.Body>
-                <Container mb={6}>
-                    <Heading>
+        <section className="hero">
+            <div className="hero-body">
+                <div className="container mb-6">
+                    <h1 className="title">
                         About Me
-                    </Heading>
-                </Container>
+                    </h1>
+                </div>
 
-                    <Card
-                    mb={6}
+                    <div
+                    className="card mb-6"
                     style={{
                         maxWidth: '500px',
                         textAlign: 'center',
                         margin: 'auto',
                     }}
                     >
-                    <Card.Image 
-                    src={portrait} 
-                    id="profile-picture"
-                    />
-                    <Card.Content>
+                    <div className="card-image">
+                      <figure className="image" id="profile-picture">
+                        <img src={portrait} alt="Andrew Barlow" />
+                      </figure>
+                    </div>
+                    <div className="card-content">
                         Andrew Barlow
-                    </Card.Content>
-                    </Card>
+                    </div>
+                    </div>
 
 
-                <Container mb={6}>
+                <div className="container mb-6">
 
-                    <Content size={'medium'}>
+                    <div className="content is-medium">
                         Hello! My name is Andrew Barlow. I'm a CU Boulder graduate
                         with a degree in Creative Technology and Design. I would
                         describe my skill-set as cross-disciplinary, with a focus on
@@ -50,20 +50,20 @@ export default class About extends Component {
                         creation of procedural art. I love technology and science
                         just as much as I love art and design. I think this balance
                         pushes my work to a level that sets me apart.
-                    </Content>
+                    </div>
 
-                </Container>
+                </div>
 
-                <Container mb={6}>
-                    <Heading>
+                <div className="container mb-6">
+                    <h1 className="title">
                         Skills
-                    </Heading>
-                </Container>
+                    </h1>
+                </div>
 
-                <Container>
-                <Content size={'medium'}>
-                <Columns>
-                    <Columns.Column>
+                <div className="container">
+                <div className="content is-medium">
+                <div className="columns is-multiline">
+                    <div className="column">
                     <ul>
                         <li>Front End Web Development
                         <ul>
@@ -92,8 +92,8 @@ export default class About extends Component {
                         </ul></li>
                         <li>LATEX Document Creation &amp; Formatting</li>
                     </ul>
-                    </Columns.Column>
-                    <Columns.Column>
+                    </div>
+                    <div className="column">
                     <ul>
                         <li>Linux Proficiency
                         <ul>
@@ -126,14 +126,14 @@ export default class About extends Component {
                         <li>Microsoft Office Suite</li>
                         </ul></li>
                     </ul>
-                    </Columns.Column>
-                </Columns>
-                </Content>
+                    </div>
+                </div>
+                </div>
 
-                </Container>
-                
-            </Hero.Body>
-        </Hero>
+                </div>
+
+            </div>
+        </section>
         </>
     )
   }

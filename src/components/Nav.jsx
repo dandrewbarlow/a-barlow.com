@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button, Navbar } from 'react-bulma-components'
 import icon from '../img/icon.png';
 import { Link } from 'react-router-dom';
 
@@ -39,15 +38,15 @@ export default class Nav extends Component {
     render() {
 
         return(
-            <Navbar 
-            size='large' 
-            transparent={true}
+            <nav
+            className="navbar is-transparent is-spaced"
+            role="navigation"
             style={{textAlign: 'center', justifyContent: 'space-around'}}
             >
 
             {this.navItems()}
 
-            </Navbar>
+            </nav>
         );
     }
 

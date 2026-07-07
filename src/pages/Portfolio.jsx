@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import { Tabs } from 'react-bulma-components';
-
 import ThreeD from './content/ThreeD';
 import Web from './content/Web';
 import Graphic from './content/Graphic';
@@ -17,21 +15,22 @@ export default class Portfolio extends Component {
 
   }
   tabs() {
+    const tabs = [
+      { key: "graphic", label: "Graphic Design" },
+      { key: "web", label: "Web Development" },
+      { key: "creative", label: "Creative Coding" },
+      { key: "3d", label: "3D" },
+    ];
     return (
-        <Tabs type='toggle' fullwidth={false} align="center">
-          <Tabs.Tab active={this.state.tab==="graphic"} onClick={() => this.setState({tab:"graphic"})}>
-            Graphic Design
-          </Tabs.Tab>
-          <Tabs.Tab active={this.state.tab==="web"} onClick={() => this.setState({tab:"web"})}>
-            Web Development
-          </Tabs.Tab>
-          <Tabs.Tab active={this.state.tab==="creative"} onClick={() => this.setState({tab:"creative"})}>
-            Creative Coding
-          </Tabs.Tab>
-          <Tabs.Tab active={this.state.tab==="3d"} onClick={() => this.setState({tab:"3d"})}>
-            3D
-          </Tabs.Tab>
-        </Tabs>
+        <div className="tabs is-centered is-toggle">
+          <ul>
+            {tabs.map(({ key, label }) => (
+              <li key={key} className={this.state.tab === key ? "is-active" : ""}>
+                <a onClick={() => this.setState({ tab: key })}>{label}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
     )
   }
 

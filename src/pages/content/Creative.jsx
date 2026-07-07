@@ -1,5 +1,4 @@
 import React from 'react'
-import { Card, Columns, Container, Heading, Hero, Image } from 'react-bulma-components'
 import ImageCard from '../../components/ImageCard'
 
 import eclipse from '../../img/creative/eclipse.png'
@@ -29,9 +28,9 @@ let iframeStyle = {
 export default function Creative() {
   return (
     <>
-    <Columns centered={true} vCentered={true}>
+    <div className="columns is-multiline is-centered is-vcentered">
 
-        <ImageCard 
+        <ImageCard
         image={eclipse}
         content="Eclipse"
         footer="Processing"
@@ -110,45 +109,45 @@ export default function Creative() {
         footer="Processing"
         />
 
-    </Columns>
-    
-    <Hero>
-        <Hero.Body>
-            <Container>
-                <Heading>
-                    Emitting
-                </Heading>
+    </div>
 
-                <Heading subtitle size={5}>
+    <section className="hero">
+        <div className="hero-body">
+            <div className="container">
+                <h1 className="title">
+                    Emitting
+                </h1>
+
+                <h2 className="subtitle is-5">
                 Emitting is my Senior year Capstone project. It is an
                 interactive sculptural installation using projection mapping and
                 reacting to the audience to express and explore feelings of
                 loneliness. Presented in CU Boulder's Black Box Experimental
                 Theater. Collaboration with Phu Le, Madi Heath, and Sofi
                 Ozambela.
-                </Heading>
+                </h2>
 
-                <Heading subtitle size={5}>
+                <h2 className="subtitle is-5">
                     My responsibilities for this project were on the interactive
                     elements, which included the interactive generative effects
                     projected onto the sculptures, the projection mapping of the
                     sculptures themselves, processing input data from Kinects to
                     detect audience members, and finally sending that data back
                     to the program rendering the visuals.
-                </Heading>
+                </h2>
 
-                <Heading subtitle size={5}>
+                <h2 className="subtitle is-5">
                     Technologies Used: TouchDesigner, Processing, Kinect, SimpleOpenNI, OSC, MaxMSP
-                </Heading>
+                </h2>
 
-            </Container>
-        </Hero.Body>
-    </Hero>
+            </div>
+        </div>
+    </section>
 
 
-    <Columns centered={true} vCentered={true}>
+    <div className="columns is-multiline is-centered is-vcentered">
 
-        <Columns.Column size={8}>
+        <div className="column is-8">
             <figure className="image">
                 <iframe 
                 style={ iframeStyle } 
@@ -159,7 +158,7 @@ export default function Creative() {
                 allow="autoplay; fullscreen; picture-in-picture" 
                 allowFullScreen />
             </figure>
-        </Columns.Column>
+        </div>
 
         <ImageCard
         image={capstone}
@@ -178,7 +177,7 @@ export default function Creative() {
         size={8}
         fullscreen={true}
         />
-    </Columns>
+    </div>
 
     </>
   )

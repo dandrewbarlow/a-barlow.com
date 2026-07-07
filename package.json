@@ -10,7 +10,6 @@
     "@testing-library/user-event": "^14.6.1",
     "bulma": "^0.9.4",
     "react": "^19.2.7",
-    "react-bulma-components": "^4.1.0",
     "react-dom": "^19.2.7",
     "react-helmet-async": "^3.0.0",
     "react-router-dom": "^7.18.1",

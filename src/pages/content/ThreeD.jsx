@@ -1,7 +1,6 @@
 import React from 'react'
 
 import ImageCard from '../../components/ImageCard'
-import { Columns } from 'react-bulma-components'
 
 import roadhouse from '../../img/3d/roadhouse.jpg'
 import donut from '../../img/3d/render-2.jpg'
@@ -10,8 +9,8 @@ import city3 from '../../img/3d/render-08.jpg'
 
 export default function ThreeD() {
   return (
-    <Columns centered={true} vCentered={true}>
-      <ImageCard 
+    <div className="columns is-multiline is-centered is-vcentered">
+      <ImageCard
         image={roadhouse} 
         content="Roadhouse Sign from Twin Peaks" 
         footer="Blender"
@@ -36,6 +35,6 @@ export default function ThreeD() {
       footer="Blender"
       />
 
-    </Columns>
+    </div>
   )
 }

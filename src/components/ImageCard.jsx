@@ -1,52 +1,34 @@
 import React from 'react'
-import { Card, Columns } from 'react-bulma-components';
 
 export default function ImageCard(props) {
-  let content;
-  let footer;
-  let size;
-  let fullscreen = false;
-  let link = false;
+  const size = props.size ?? 4;
+  const fullscreen = !!props.fullscreen;
+  const isLink = !!props.link;
 
-  if (props.content) {
-    content = <Card.Content> {props.content} </Card.Content>;
-  }
-
-  if (props.footer) {
-    footer = <Card.Footer> <Card.Footer.Item> {props.footer} </Card.Footer.Item> </Card.Footer>;
-  }
-
-  if (props.size) {
-    size = props.size;
-  }
-  else {
-    size = 4;
-  }
-
-  if (props.fullscreen) {
-    fullscreen = true;
-  }
-
-  if (props.link) {
-    link = true;
-  }
+  const img = <img src={props.image} alt="" />;
+  const figureClass = `image${fullscreen ? ' is-fullwidth' : ''}`;
 
   return (
-    <Columns.Column size={size}>
-      <Card>
+    <div className={`column is-${size}`}>
+      <div className="card">
 
-        <Card.Image 
-        src={props.image} 
-        fullwidth={fullscreen}
-        renderAs={link ? 'a' : 'figure'}
-        href={props.link}
-        />
+        <div className="card-image">
+          {isLink
+            ? <a className={figureClass} href={props.link}>{img}</a>
+            : <figure className={figureClass}>{img}</figure>}
+        </div>
 
-        {content}
+        {props.content && (
+          <div className="card-content"> {props.content} </div>
+        )}
 
-        {footer}
+        {props.footer && (
+          <div className="card-footer">
+            <div className="card-footer-item"> {props.footer} </div>
+          </div>
+        )}
 
-      </Card>
-    </Columns.Column>
+      </div>
+    </div>
   )
 }

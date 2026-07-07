@@ -1,5 +1,4 @@
 import React from 'react'
-import { Columns } from 'react-bulma-components'
 
 import ImageCard from '../../components/ImageCard'
 
@@ -11,7 +10,7 @@ import capstone from '../../img/web/emitting.gif'
 
 export default function Web() {
   return (
-    <Columns centered={true} vCentered={true}>
+    <div className="columns is-multiline is-centered is-vcentered">
         <ImageCard 
         image={aBarlow} 
         content="This webpage!" 
@@ -39,6 +38,6 @@ export default function Web() {
         link="https://emittingcu.com/"
         />
 
-    </Columns>
+    </div>
   )
 }
