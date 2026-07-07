@@ -13,7 +13,7 @@ import About from './pages/About'
 
 // Libraries
 import React, { Component } from 'react'
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MyFooter from './pages/MyFooter';
 
